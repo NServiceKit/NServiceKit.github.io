@@ -1,35 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="NServiceKit : Forever free, open source REST services framework for .NET" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>NServiceKit by NServiceKit</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>NServiceKit</title>
   </head>
-
   <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/NServiceKit">View On GitHub</a></li>
+        </nav>
+      </div><!-- end header -->
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/NServiceKit">View on GitHub</a>
+    <div class="wrapper">
 
-          <h1 id="project_title">NServiceKit</h1>
-          <h2 id="project_tagline">Forever free, open source REST services framework for .NET</h2>
+      <section>
+        <div id="title">
+          <h1>NServiceKit</h1>
+          <p>Forever free, open source web services framework for .NET</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/NServiceKit">NServiceKit</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
 
-        </header>
-    </div>
+        <h3>
+<a name="nservicekit-is-a-forever-free-open-source-fork-of-servicestack-v3" class="anchor" href="#nservicekit-is-a-forever-free-open-source-fork-of-servicestack-v3"><span class="octicon octicon-link"></span></a>NServiceKit is a forever free, open source fork of ServiceStack V3.</h3>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        
-        <h3>NServiceKit is a forever free, open source fork of ServiceStack V3.</h3>
-<h2><a name="near-term-project-goals" class="anchor" href="#near-term-project-goals"><span class="octicon octicon-link"></span></a>Near Term Project Goals</h2>
+<p>The goal of this fork is to provide a high quality, well-tested, concise framework for building web services for .NET.  We have a special focus on web services on the server side (both Microsoft and Mono) and will strive to be the best framework that works well with others.</p>
+
+<h2>
+<a name="near-term-project-goals" class="anchor" href="#near-term-project-goals"><span class="octicon octicon-link"></span></a>Near Term Project Goals</h2>
 
 <h3>
 <a name="add-and-enhance-community-requested-features" class="anchor" href="#add-and-enhance-community-requested-features"><span class="octicon octicon-link"></span></a>Add and enhance community requested features</h3>
@@ -37,11 +49,12 @@
 <ul>
 <li>Add features that the community wanted in ServiceStack V3</li>
 <li>Enhance limited features/functionality</li>
+<li>Work better with other projects</li>
 </ul><h3>
 <a name="clean-up-code" class="anchor" href="#clean-up-code"><span class="octicon octicon-link"></span></a>Clean up code</h3>
 
 <ul>
-<li>Remove deprecated obsolete features</li>
+<li>Remove deprecated obsolete features and general cruft</li>
 <li>Remove unnecessary platform targets</li>
 <li>Document</li>
 <li>Unit Test</li>
@@ -51,65 +64,29 @@
 <ul>
 <li>Build on Travis with Unit Tests</li>
 <li>Take requests for fixes on Mono</li>
-</ul>
+</ul><h2>
+<a name="build-status" class="anchor" href="#build-status"><span class="octicon octicon-link"></span></a>Build Status</h2>
 
-<h3>Please create issues for us if you have a feature/bug fix/enhancement.  We welcome pull requests as well!</h3>
+<h3>
+<a name="microsoft" class="anchor" href="#microsoft"><span class="octicon octicon-link"></span></a>Microsoft</h3>
 
-<script>
-// Include the UserVoice JavaScript SDK (only needed once on a page)
-UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/0LdI3fTYc5dedsrcGDPaA.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
+<p>NServiceKit: <a href="https://ci.appveyor.com/project/mirthy/nservicekit"><img src="https://ci.appveyor.com/api/projects/status/3mnpwkirfki9mggf" alt="Build status"></a><br>
+NServiceKit.Text: <a href="https://ci.appveyor.com/project/mirthy/nservicekit-text"><img src="https://ci.appveyor.com/api/projects/status/gm29nh7lvrfa6clg" alt="Build status"></a><br>
+NServiceKit.Redis: <a href="https://ci.appveyor.com/project/mirthy/nservicekit-redis"><img src="https://ci.appveyor.com/api/projects/status/c9anu1egmwyg38md" alt="Build status"></a>  </p>
 
-//
-// UserVoice Javascript SDK developer documentation:
-// https://www.uservoice.com/o/javascript-sdk
-//
+<h3>
+<a name="mono" class="anchor" href="#mono"><span class="octicon octicon-link"></span></a>Mono</h3>
 
-// Set colors
-UserVoice.push(['set', {
-  accent_color: '#808283',
-  trigger_color: 'white',
-  trigger_background_color: 'rgba(46, 49, 51, 0.6)'
-}]);
+<p>NServiceKit: <a href="https://travis-ci.org/NServiceKit/NServiceKit"><img src="https://travis-ci.org/NServiceKit/NServiceKit.svg?branch=master" alt="Build Status"></a><br>
+NServiceKit.Text: Coming soon<br>
+NServiceKit.Redis: Coming soon  </p>
 
-// Identify the user and pass traits
-// To enable, replace sample data with actual user traits and uncomment the line
-UserVoice.push(['identify', {
-  //email:      'john.doe@example.com', // User’s email address
-  //name:       'John Doe', // User’s real name
-  //created_at: 1364406966, // Unix timestamp for the date the user signed up
-  //id:         123, // Optional: Unique id of the user (if set, this should not change)
-  //type:       'Owner', // Optional: segment your users by type
-  //account: {
-  //  id:           123, // Optional: associate multiple users with a single account
-  //  name:         'Acme, Co.', // Account name
-  //  created_at:   1364406966, // Unix timestamp for the date the account was created
-  //  monthly_rate: 9.99, // Decimal; monthly rate of the account
-  //  ltv:          1495.00, // Decimal; lifetime value of the account
-  //  plan:         'Enhanced' // Plan name for the account
-  //}
-}]);
-
-// Add default trigger to the bottom-right corner of the window:
-UserVoice.push(['addTrigger', { mode: 'smartvote', trigger_position: 'bottom-right' }]);
-
-// Or, use your own custom trigger:
-//UserVoice.push(['addTrigger', '#id', { mode: 'smartvote' }]);
-
-// Autoprompt for Satisfaction and SmartVote (only displayed under certain conditions)
-UserVoice.push(['autoprompt', {}]);
-</script>
-
+<h3>
+<a name="please-create-issues-for-us-if-you-have-a-featurebug-fixenhancement-we-welcome-all-pull-requests-as-well" class="anchor" href="#please-create-issues-for-us-if-you-have-a-featurebug-fixenhancement-we-welcome-all-pull-requests-as-well"><span class="octicon octicon-link"></span></a>Please create <a href="https://github.com/NServiceKit/NServiceKit/issues">issues</a> for us if you have a feature/bug fix/enhancement. We welcome all pull requests as well!</h3>
       </section>
-    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
     </div>
-
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
-
   </body>
 </html>
